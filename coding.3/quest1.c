@@ -26,7 +26,7 @@ int main(){
 
 /*********************************************
 Your name: Sreynit Khatt
-Question 1: x = 150 in  the child process
+Question 1: p = 150 in  the child process
 Question 2: The variable changes depending on which process they are in. 
-If it is a child process x=150 and if it's a parent process x=200.
+If it is a child process its variable value witll always be 150 and if it's a parent process its variable value will be 200.
 *********************************************/
