@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/wait.h>
 
-int main(int argc, char *argv[]){
+int main(){
 	
 	int x = 100;
 	int rc = fork();
@@ -13,17 +12,15 @@ int main(int argc, char *argv[]){
 	} else if (rc == 0) {
 		int c;
 		c = x + 50;
-		printf("hello, I am child with a value x: %d\n", c);
-		
+		printf("hello, I am child with a value x:");
+		printf("X:", c);
 		
 	} else {
-		wait(NULL);
 		int p;
 		p = x+ 100;
-		printf("hello, I am the parent with a value of x: %d\n", p);
-		
+		printf("hello, I am the parent with a value of x:");
+		printf("X:", p);
 	}
-	return 0;
 }
 
 
