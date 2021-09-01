@@ -20,3 +20,10 @@ int main(int argc, char *argv[]) {
 	}
 	return 0;
 }
+/*********************************************
+Your name:Sreynit
+Question 1: I think there are more than one variants in some basic call 
+because there are more than one way to specify the arguments depending on the
+program or the action that you want to happen.
+Question 2: <your answer>
+*********************************************/
