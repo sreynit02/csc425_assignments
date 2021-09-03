@@ -5,18 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	int rc = fork();
-	int address;
+	int wstatus;
 	if (rc < 0) {
 		fprintf(stderr, "fork failed\n");
 		exit(1);
-	} else (rc == 0) {
+	} else if (rc == 0) {
 		printf("Child is running\n");
-		int address = getpid();
-		printf("address: %d\n", address);	
-	}
-	int rc_wait = waitpid(address);
+	} else {
+	int rc_wait = waitpid(rc, &wstatus, WUNTRACED | WCONTINUED );
 	printf("Parent running. PID: %d\n", rc_wait);
-
+	}
 	return 0;
 }
 /*********************************************
