@@ -4,10 +4,14 @@ Question 2: Amount of memory in my system: 7960 MB, Amount free: 6329 MB
 These numbers don't match my intuition because I always thought there would 
 be more memory space in a system; like I would think at least 1 GB. My phone 
 would not be able to run on a 1 GB memory space.
-Question 4: <your answer>
-Question 6: I got the PID from running the command ps auxw. PID was provided in the first column. 
+Question 4: Somehow when I run my program the memory usage decrease and the numbers don't meet my expectation
+because I thought the memory usage would increase since I am running a program and using the resource. When I try to
+use large amounts of memory, the memory used decrease which is kind of wierd. 
+Question 6: I got the PID for my program by adding the print statement at the end of my function that gets the 
+PID using the getpid() function. I also ran ps auxw to get the list of process and their pid. 
 Question 7: When I used the flag -X on some of the PID, there were little no detail provided for some of them (maybe, there were nothing much done
 in that process). For some of them, there's a path shown as a result and other show what command was used. When I used the -d flag, the address 
-space of that process was also shown which wasn't expected.
+space of that process was also shown which wasn't expected. Nothing was shown when I ran pmap -X followed by
+the PID of my program.
 *********************************************/
 
